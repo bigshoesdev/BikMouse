@@ -1,0 +1,14 @@
+/node_modules
+/chatapp/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.svn
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env

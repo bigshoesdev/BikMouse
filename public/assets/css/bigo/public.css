@@ -1,0 +1,1530 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'sans_100';
+    src:url('museosans-100.woff2') format('woff2'),
+    url('museosans-100.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sans_300';
+    src:url('museosans-300.woff2') format('woff2'),
+    url('museosans-300.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sans_500';
+    src:url('museosans-500.woff2') format('woff2'),
+    url('museosans-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iconFont';
+    src:  url('icomoon/icomoon.eot?7gbne4');
+    src:  url('icomoon/icomoon.eot?7gbne4#iefix') format('embedded-opentype'),
+    url('icomoon/icomoon.ttf?7gbne4') format('truetype'),
+    url('icomoon/icomoon.woff?7gbne4') format('woff'),
+    url('icomoon/icomoon.svg?7gbne4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+p{margin: 0;}
+form{margin: 0;}
+input,select{color: #333;margin: 0;padding: 0;border: none;outline: none;-webkit-appearance: none;}
+textarea{color: #333;padding: 0;border: none;outline: none;-webkit-appearance: none;resize: none;text-align: justify;}
+a{color: #333;text-decoration: none;-webkit-tap-highlight-color: rgba(255,255,255,0);}
+b{font-weight: normal;}
+i{font-style: normal;}
+ul,ol{margin: 0;padding: 0;}
+li{list-style: none;}
+img{border: 0;}
+table{border-collapse: collapse;text-align: center;}
+td,th{padding: 0;}
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+    line-height: 0;
+    clear: both;
+}
+.clearfix{zoom: 1;}
+.f_left{float: left;}
+.f_right{float: right;}
+.commonbtn{
+    background-color: #0dc !important;
+}
+.commonbtn:hover{
+    background-color: #00caba !important;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+html,body{padding:0;margin:0;font-family: 'sans_300','sans_100','sans_500','Microsoft YaHei';min-height: 100%;}
+body{
+    background: #f2f2f2;
+}
+.bigo_page_head{
+    width: 100%;
+    height: 59px;
+    min-width: 1080px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    font-family: 'sans_500';
+    background: #161616;
+    border-bottom: 1px #161616 solid;
+}
+.head_left{
+    margin-left: 25px;
+    height: 100%;
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.bigo_logo{
+    position: relative;
+    top: 8px;
+    float: left;
+    display: inline-block;
+}
+.bigo_logo a{
+    display: inline-block;
+}
+.bigo_logo img{
+    height: 45px;
+}
+.bigo_nav{
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 55px;
+    position: relative;
+    top: 12px;
+}
+.bigo_nav li{
+    margin-right: 10px;
+    display: inline-block;
+}
+.bigo_nav a{
+    display: inline-block;
+    line-height: 35px;
+    padding:0 25px;
+    overflow: hidden;
+    border-radius: 35px;
+    color: #999999;
+    font-size: 18px;
+    font-family: 'sans_500';
+}
+.bigo_nav a:hover{
+    color: #00ddcc;
+    font-family: 'sans_500';
+}
+.bigo_nav .current a{
+    color: #00ddcc;
+    font-family: 'sans_500';
+}
+.head_right{
+    margin-right: 30px;
+    position: relative;
+    top: 20px;
+}
+.head_right_tools{
+    display: inline-block;
+    float: left;
+}
+.head_right_tools li{
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    float: left;
+}
+.head_right_tools .tools{
+    color: #999;
+    line-height: 20px;
+    font-size: 16px;
+}
+.head_right_tools a.tools:hover, .head_right_tools a.current{
+    color:#00ddcc;
+}
+.head_right_tools .tools_2:after{
+    display: block;
+    content: "";
+    width: 17px;
+    height: 22px;
+    float: right;
+    margin-right: 3px;
+}
+.head_right_tools .tools_2:after{
+    background: url('../../img/bigo/icon.png') -8px -417px no-repeat ;
+}
+.head_right_tools .load_box{
+    position: absolute;
+    left: -65px;
+    /* top: 45px; */
+    top: 20px;
+    width: 159px;
+    padding-top: 20px;
+    display: none;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -moz-transform-origin:100% 0;
+    -o-transform-origin:100% 0;
+    transform-origin: 100% 0;
+}
+.head_load_box{
+    background: #fff ;
+    border-radius: 3px;
+    padding-top: 20px;
+    position: relative;
+    border:1px #e2e2e2 solid;
+}
+.head_load_box .arrow{
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    left: 75px;
+    top: -4px;
+    border-top:1px #e2e2e2 solid;
+    border-left:1px #e2e2e2 solid;
+    -webkit-transform :rotate(45deg);
+    -moz-transform :rotate(45deg);
+    -o-transform  :rotate(45deg);
+    transform   :rotate(45deg);
+}
+.head_right_tools li:hover .load_box{
+    display: block;
+    animation: scale 0.5s;
+    -moz-animation: scale 0.5s;
+    -webkit-animation: scale 0.5s;
+    -o-animation: scale 0.5s;
+}
+.load_btn_box .down_list{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.head_right_tools .download_code{
+    margin-bottom: 5px;
+    top: -5px;
+}
+
+.bigo_left_fix_nav{
+    width: 90px;
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    top: 80px;
+    bottom: 0;
+    background: #373737;
+}
+.left_nav{
+    width: 100%;
+}
+.left_nav li{
+    height: 100px;
+    border-bottom: 1px #292929 solid;
+}
+.left_nav a{
+    display: block;
+    width: 100%;
+    height: 99px;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 14px;
+    border-bottom: 1px #414141 solid;
+}
+.left_nav a:hover{
+    background: #303030;
+}
+.left_nav span{
+    position: relative;
+    top: 25px;
+    display: block;
+    width: 100%;
+}
+.left_nav span:before{
+    display: block;
+    content: " ";
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    background-image: url('../../img/bigo/icon.png');
+    background-repeat: no-repeat;
+}
+.left_nav .nav_1 span:before{
+    background-position: 2px -6px;
+}
+.left_nav .nav_2 span:before{
+    background-position: 2px -108px;
+}
+.left_nav .nav_3 span:before{
+    background-position: 2px -208px;
+}
+.left_nav .nav_1:hover span:before,.left_nav .nav_1.current span:before{
+    background-position: -74px -6px;
+}
+.left_nav .nav_2:hover span:before,.left_nav .nav_2.current span:before{
+    background-position: -74px -108px;
+}
+.left_nav .nav_3:hover span:before, .left_nav .nav_3.current span:before{
+    background-position: -74px -208px;
+}
+.left_nav a:hover, .left_nav .current a{
+    color: #00ddcc;
+}
+.b_app_download{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    background: #2c2c2c;
+    border-top: 1px #414141 solid;
+}
+.b_app_download a{
+    display: block;
+    width: 100%;
+    height: 109px;
+    color: #9b9b9b;
+    font-size: 14px;
+    border-top: 1px #292929 solid;
+}
+.b_app_download a:hover{
+    color: #00ddcc;
+}
+.b_app_download span{
+    position: relative;
+    top: 25px;
+    display: block;
+    width: 100%;
+}
+.b_app_download span:before{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    background-image: url('../../img/bigo/icon.png');
+    background-repeat: no-repeat;
+    background-position: 2px -302px ;
+}
+.b_app_download a:hover span:before{
+    background-position: -74px -302px;
+}
+
+/*SS登陆样式*/
+.login_wrap{
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+}
+.login_guide{
+    position: absolute;
+    width: 583px;
+    height: 351px;
+    top: 30px;
+    right: 0;
+    background: url('../../img/bigo/tips_login.png') center no-repeat ;
+}
+.login_guide .login_guide_btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 17px;
+    top: 40px;
+    cursor: pointer;
+}
+.login_tap_box{
+    display: none;
+    position: relative;
+    top: -8px;
+}
+.login_tap_box.current{
+    display: inline-block;
+}
+.login_tap_box .login_btn{
+    display: inline-block;
+    font-size: 16px;
+    color: #161616;
+    line-height: 36px;
+    padding:0px 12px;
+    border-radius: 3px;
+    background: #00ddcc;
+}
+.login_tap_box .login_btn:hover{
+    background: #00ffee;
+}
+.login_tap_box .login_btn:active{
+    background: #00caba;
+}
+.logined_box{
+    height: 52px;
+    position: relative;
+    top: -12px;
+    display: none;
+}
+.logined_box.current{
+    display: block;
+}
+.logined_box .thumb{
+    display: block;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 45px;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0px 0px 1px #000;
+}
+.logined_box .thumb img{
+    width: 100%;
+    height: 100%;
+}
+.logined_more_box{
+    float: right;
+    margin-top: 12px;
+}
+.logined_more_box .name{
+    display: block;
+    position: relative;
+    max-width: 100px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #999;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.logined_more_box .name:after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url('../../img/bigo/icon.png') -13px -416px no-repeat ;
+}
+/*个人信息右侧窗口下拉 */
+.user_profile_fixed{
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: 300px;
+    height: 290px;
+    background: #fff;
+    border: 1px #eee solid;
+    display: none;
+}
+.logined_box:hover .user_profile_fixed{
+    display: block;
+    animation: scale 0.5s;
+    -moz-animation: scale 0.5s;
+    -webkit-animation: scale 0.5s;
+    -o-animation: scale 0.5s;
+}
+.user_profile_fixed .arrow{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    right: 50px;
+    top: -6px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    border-top: 1px #eee solid;
+    border-left: 1px #eee solid;
+}
+.user_profile_fixed .thumb_wrap_grade{
+    margin-top: 20px;
+}
+.thumb_wrap_grade{
+    width: 80px;
+    height: 82px;
+    margin: auto;
+    position: relative;
+}
+.thumb_wrap_grade .thumb_box{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    overflow: hidden;
+}
+.thumb_wrap_grade .thumb_icon{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+.thumb_wrap_grade .user_grade{
+    width: 60px;
+    height: 22px;
+    border:2px #fff solid;
+    background: #fd809e;
+    border-radius: 22px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -32px;
+    text-align: center;
+}
+.thumb_wrap_grade .user_grade_num{
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+    display: inline-block;
+}
+.thumb_wrap_grade .user_grade_num:before{
+    display: block;
+    font-family: 'iconFont';
+    content: '\e902';
+    float: left;
+    font-size:14px;
+    margin-right:5px;
+    color: #fff99b;
+}
+.user_profile_fixed .user_infor{
+    text-align: center;
+    margin:10px auto 20px;
+}
+.user_profile_fixed .nick_name{
+    font-size: 16px;
+    color: #3a5161;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.user_profile_fixed .bigoid{
+    font-size: 14px;
+    color: #81a1ae;
+}
+.user_profile_fixed .balance_recharge{
+    width: 280px;
+    margin:auto;
+    padding-top: 20px;
+    border-top: 1px #eee solid;
+    overflow: hidden;
+}
+.user_profile_fixed .balance_left{
+    font-size: 16px;
+    color: #81a1ae;
+    float: left;
+    margin-top: 7px;
+}
+.user_profile_fixed .diamond_num{
+    padding-left:20px;
+    position: relative;
+}
+.user_profile_fixed .diamond_num:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 14px;
+    background: url(../../img/bigo/icon2.png) -4px -29px no-repeat;
+}
+.user_profile_fixed .recharge_btn{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #00ddcc;
+    border-radius: 4px;
+    float: right;
+}
+.user_profile_fixed .bottom_tools{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: #fafafa;
+}
+.user_profile_fixed .bottom_tools li{
+    width: 50%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.user_profile_fixed .btn_line:after{
+    content: '|';
+    font-size: 20px;
+    display: block;
+    color: #eee;
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+.user_profile_fixed .user_profile_btn:before{
+    display: inline-block;
+    content: '\e903';
+    font-family: 'iconFont';
+    margin-right: 10px;
+}
+.user_profile_fixed .logout_btn:before{
+    display: inline-block;
+    content: '\e901';
+    font-family: 'iconFont';
+    margin-right: 10px;
+}
+.user_profile_fixed .bottom_tools a{
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    color: #3a5161;
+}
+.user_profile_fixed .bottom_tools a:hover{
+    color: #0dc;
+}
+.logined_user_more{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 145px;
+    padding-top: 7px;
+    display: none;
+}
+.logined_box:hover .logined_user_more{
+    display: block;
+}
+.logined_user_more .log_inner_box{
+    border-radius: 2px;
+    background: #fff;
+    position: relative;
+    padding:15px 0;
+    border:1px #e2e2e2  solid;
+}
+.logined_user_more .arrow_dot{
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+    background: #fff;
+    border-left: 1px #e2e2e2 solid;
+    border-top: 1px #e2e2e2 solid;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.logined_user_more .logout{
+    display: block;
+    width: 100%;
+    line-height: 35px;
+    color: #999;
+}
+.logined_user_more .logout:before{
+    display: block;
+    content: '';
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin:5px 12px 0px 22px;
+    background: url('../../img/bigo/icon.png') -10px -1111px no-repeat ;
+}
+.logined_user_more a:hover{
+    color: #00DDCC;
+}
+.login_scan_wrap{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+.login_scan_wrap.loginStatu{
+    display: block;
+}
+@keyframes loginSample
+{
+    0%   {transform: scale(0.8);}
+    25%  {transform: scale(1.1);}
+    50%  {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+@-moz-keyframes loginSample /* Firefox */
+{
+    0%   {-moz-transform: scale(0.8);}
+    25%  {-moz-transform: scale(1.1);}
+    50%  {-moz-transform: scale(0.95);}
+    100% {-moz-transform: scale(1);}
+}
+
+@-webkit-keyframes loginSample /* Safari 和 Chrome */
+{
+    0%   {-webkit-transform: scale(0.8);}
+    25%  {-webkit-transform: scale(1.1);}
+    50%  {-webkit-transform: scale(0.95);}
+    100% {-webkit-transform: scale(1);}
+}
+
+@-o-keyframes loginSample /* Opera */
+{
+    0%   {-o-transform: scale(0.8);}
+    25%  {-o-transform: scale(1.1);}
+    50%  {-o-transform: scale(0.95);}
+    100% {-o-transform: scale(1);}
+}
+.scan_sample{
+    position: absolute;
+    width: 273px;
+    height: 489px;
+    left: 100%;
+    top: -130px;
+    background: url('../../img/bigo/login_sample1.png') center no-repeat ;
+    filter:alpha(opacity=0);
+    opacity: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.login_before{
+    width: 182px;
+    margin:auto;
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+.login_before.current{
+    display: block;
+}
+.login_scan_wrap:hover .scan_sample{
+    left: 400px;
+    filter:alpha(opacity=100);
+    opacity: 1;
+}
+
+/*修改新增最外层盒子*/
+.login_signup_step_w{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -270px;
+    background: #fff;
+    border-radius: 3px;
+}
+.login_signup_step_w .back_btn{
+    position: relative;
+    top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #8ba8b4;
+    left: 15px;
+}
+.login_signup_step_w .back_btn:before{
+    display: block;
+    content: '';
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 8px;
+    background: url('../../img/bigo/icon2.png') -68px -428px no-repeat ;
+}
+.login_signup_step_w .login_title{
+    text-align: center;
+    font-size: 20px;
+    color: #3a5161;
+    font-weight: normal;
+    margin:15px auto 20px;
+    font-family: 'sans_500';
+}
+.login_signup_form{
+    width: 320px;
+    margin:auto;
+}
+.login_sign_ul{
+    overflow: hidden;
+}
+.login_sign_ul li{
+    width: 50%;
+    float: left;
+}
+.login_sign_ul a{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    color: #8ba8b4;
+    text-align: center;
+    border-bottom: 2px #d6e3e8 solid;
+}
+.login_sign_ul .current a, .login_sign_ul a:hover{
+    color: #00ddcc;
+    border-bottom: 2px #00ddcc solid;
+}
+.login_sign_form .form_put_title{
+    font-size: 14px;
+    color: #8ba8b4;
+    margin:20px 0 10px;
+}
+.country_select_box{
+    height: 34px;
+    position: relative;
+    z-index: 9;
+    font-size: 14px;
+    color: #3a5161;
+    border-radius: 4px;
+    border:1px #d2e6e4 solid;
+}
+.country_select_box .current_selected{
+    display: block;
+    line-height: 34px;
+    text-indent: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.country_select_box .current_selected:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    width: 12px;
+    height: 10px;
+    background: url('../../img/bigo/icon2.png') -99px -433px no-repeat ;
+}
+.country_list_box{
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    top: 34px;
+    padding-top: 5px;
+    display: none;
+}
+.country_select_box.current .country_list_box{
+    display: block;
+}
+.country_list_box ::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 8px;
+    display: none;
+}
+.country_list_box ::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background: transparent;
+}
+.country_list_box ::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: #d6e3e8;
+}
+.country_list_box ::-webkit-scrollbar-button{
+    height: 4px;
+    width: 4px;
+    background: transparent;
+}
+.country_list{
+    border-radius: 3px ;
+    max-height: 195px;
+    overflow: auto;
+    background: #fff;
+    border:1px #8ba8b4 solid;
+}
+.country_list li{
+    overflow: hidden;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.country_list .country_name{
+    font-size: 14px;
+    color: #3a5161;
+    float: left;
+    margin-left: 10px;
+}
+.country_list .country_number{
+    font-size: 14px;
+    color: #8ba8b4;
+    float: right;
+    margin-right: 20px;
+}
+.country_list li:hover .country_name{
+    color: #00ddcc;
+}
+.phone_number_tab{
+    overflow: hidden;
+    position: relative;
+}
+.phone_number_box{
+    border:1px #d2e6e4 solid;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.phone_code_box{
+    width: 225px;
+}
+.phone_number_prev{
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    float: left;
+    font-size: 14px;
+    color: #8ba8b4;
+    margin:8px 0 8px 0;
+    border-right: 1px #e2e2e2 solid;
+}
+.phone_number_box input{
+    outline: none;
+    height: 34px;
+    width: 260px;
+    font-size: 14px;
+    color: #3a5161;
+    text-indent: 10px;
+}
+.phone_code_box input{
+    width: 170px;
+}
+.phone_code_button{
+    width: 85px;
+    height: 36px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background: #00ddcc;
+    text-align: center;
+    line-height: 36px;
+}
+.phone_code_button.noClick{
+    background: #8cf0e8;
+}
+.form_put_title .forgot_password{
+    float: right;
+    color: #8ba8b4;
+    text-decoration: underline;
+}
+.password_tab{
+    border-radius: 4px;
+    border:1px #d2e6e4  solid;
+    overflow: hidden;
+}
+.password_tab input{
+    display: block;
+    height: 34px;
+    width: 100%;
+    text-indent: 10px;
+    outline: none;
+}
+.login_sign_form .submit_btn{
+    display: block;
+    width: 320px;
+    height: 36px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    bottom: 32px;
+    background: rgba(0,221,204,0.5);
+    text-align: center;
+    line-height: 36px;
+}
+.login_sign_form .allowclick{
+    cursor: pointer;
+    background: rgba(0,221,204,1);
+}
+.login_sign_form a[type=submit]:hover, .login_sign_form .phone_code_button:hover{
+    background: #00caba;
+}
+.create_password_bg{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+    background: url('../../img/bigo/password1.png') center no-repeat ;
+}
+.create_password_bg.nosee{
+    background: url('../../img/bigo/password2.png') center no-repeat ;
+}
+.create_password_rules{
+    position: relative;
+    top: -10px;
+}
+.seeable_password{
+    position: relative;
+}
+.seeable_password_btn{
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 9;
+    top: 9px;
+    right: 9px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: url('../../img/bigo/icon2.png') -1px -490px no-repeat ;
+}
+.seeable_password_btn:hover{
+    background: url('../../img/bigo/icon2.png') -20px -490px no-repeat ;
+}
+.seeable_password_btn.nosee{
+    background: url('../../img/bigo/icon2.png') -1px -470px no-repeat ;
+}
+.seeable_password_btn.nosee:hover{
+    background: url('../../img/bigo/icon2.png') -20px -470px no-repeat ;
+}
+.login_sign_form ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #d6e3e8;
+    text-indent: 10px;
+}
+.login_sign_form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #d6e3e8;
+    text-indent: 10px;
+}
+.login_sign_form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #d6e3e8;
+    text-indent: 10px;
+}
+.login_sign_form :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #d6e3e8;
+    text-indent: 10px;
+}
+
+
+.login_signup_step_box{
+    display: none;
+}
+.login_signup_step_box.current{
+    display: block;
+}
+.login_sign_enter{
+    text-align: center;
+    margin:30px auto 0;
+    width: 250px;
+}
+.login_sign_enter .enter_line_or{
+    font-size: 14px;
+    color: #8ba8b4;
+    background: #fff;
+    padding:0px 10px;
+    position: relative;
+    top: -10px;
+}
+.enter_link_box{
+    text-align: center;
+    margin:auto;
+    width: 200px;
+}
+.enter_link_box a{
+    display: inline-block;
+    margin:5px;
+}
+.enter_link_box a:before{
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+}
+.enter_link_box .facebook_enter:before{
+    background: url('../../img/bigo/icon2.png') -3px -335px no-repeat ;
+}
+.enter_link_box .google_enter:before{
+    background: url('../../img/bigo/icon2.png') -64px -335px no-repeat ;
+}
+.enter_link_box .phone_enter:before{
+    background: url('../../img/bigo/icon2.png') -3px -380px no-repeat ;
+}
+.enter_link_box .vk_enter:before{
+    background: url('../../img/bigo/icon2.png') -64px -380px no-repeat ;
+}
+.enter_link_box .twitter_enter:before{
+    background: url('../../img/bigo/icon2.png') -3px -425px no-repeat ;
+}
+
+.version_tips{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #8ba8b4;
+    background: #f2f2f2;
+    font-family: 'sans_500';
+}
+.version_tips a{
+    color: #0dc;
+    text-decoration: underline;
+}
+.login_scan_box .title{
+    font-size: 20px;
+    color: #2e2e2e;
+    text-align: center;
+    font-family: 'sans_500';
+    line-height: 90px;
+}
+.login_signup_step_w .close_btn{
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    right: 16px;
+    top: 16px;
+    width: 16px;
+    height: 16px;
+    background: url('../../img/bigo/icon.png') -47px -1085px no-repeat ;
+}
+.login_code_box{
+    display: table;
+    width: 180px;
+    height: 180px;
+    border:1px #e8e8e8 solid;
+}
+.login_code_box .code_box{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.login_code_box img{
+    width: 166px !important;
+    margin:auto;
+}
+.login_before .scan_tips:before{
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 18px;
+    background: url('../../img/bigo/icon.png') -82px -1080px no-repeat ;
+}
+.login_before .scan_tips{
+    font-size: 12px;
+    color: #8ba8b4;
+    margin-top: 22px;
+}
+.login_after{
+    text-align: center;
+    display: none;
+}
+.login_after.current{
+    display: block;
+}
+.login_after .thumb{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100px;
+    margin:0 auto 40px;
+}
+.login_after .thumb img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+.login_after .success_tips{
+    font-size: 16px;
+    color: #2e2e2e;
+    font-family: 'sans_500';
+}
+.login_after .check_phone_tips{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+.qr_overdue_box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.95);
+    z-index: 9;
+    display: none;
+}
+.qr_overdue_box.current{
+    display: block;
+}
+.qr_overdue_box .tips{
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 35px;
+}
+.qr_overdue_box .refresh_btn{
+    display: block;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #ffffff;
+    margin:auto;
+    border-radius: 36px;
+    background: #00ddcc;
+}
+/*EE登陆样式*/
+/*SS返回顶部等固定工具条*/
+.fix_tools{
+    position: fixed;
+    z-index: 9999;
+    width: 58px;
+    right: 6px;
+    top: 80%;
+    margin-top: -120px;
+    display: none;
+}
+.fix_tools.current{
+    display: block;
+}
+.fix_tools li{
+    width: 100%;
+    height: 58px;
+    margin-bottom: 7px;
+    position: relative;
+}
+.fix_tools .load_box{
+    position: absolute;
+    right: 58px;
+    top: -88px;
+    padding-right: 17px;
+    width: 159px;
+    height: 300px;
+    display: none;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -moz-transform-origin:100% 0;
+    -o-transform-origin:100% 0;
+    transform-origin: 100% 0;
+    background: url('../../img/bigo/bigo_head.png') left top no-repeat ;
+}
+.fix_tools li:hover .load_box{
+    display: block;
+    animation: scale 0.5s;
+    -moz-animation: scale 0.5s;
+    -webkit-animation: scale 0.5s;
+    -o-animation: scale 0.5s;
+}
+.download_code{
+    width: 124px;
+    margin:auto;
+    position: relative;
+    display: block;
+}
+.fix_tools .download_code{
+    margin-bottom: 112px;
+    top: 105px;
+}
+.load_box .tips{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #c1c1c1;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.load_btn_box{
+    overflow: hidden;
+    margin:auto;
+    width: 140px;
+}
+.load_btn_box a{
+    float: left;
+    margin-left: 12px;
+    color: #e2e2e2;
+    font-size: 16px;
+}
+.load_btn_box .item {
+    margin-right: -10px;
+    color: #999;
+    line-height: 22px;
+}
+.load_btn_box .item:hover{
+    color: #00ddcc;
+}
+.load_btn_box a.item:before{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 22px;
+    float: left;
+    margin-right: 10px;
+}
+.load_btn_box a.item1:before{
+    background: url('../../img/bigo/icon.png') -11px -991px no-repeat ;
+}
+.load_btn_box a.item2:before{
+    background: url('../../img/bigo/icon.png') -11px -1021px no-repeat ;
+}
+.load_btn_box a.item3:before{
+    background: url('../../img/bigo/icon.png') -84px -991px no-repeat ;
+}
+.load_btn_box a.item1:hover:before{
+    background: url('../../img/bigo/icon.png') -47px -991px no-repeat ;
+}
+.load_btn_box a.item2:hover:before{
+    background: url('../../img/bigo/icon.png') -47px -1021px no-repeat ;
+}
+.load_btn_box a.item3:hover:before{
+    background: url('../../img/bigo/icon.png') -84px -1021px no-repeat ;
+}
+.fix_tools a.tools{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 399px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 3px;
+}
+.fix_tools a.tools:hover{
+    background: #00ddcc;
+}
+.fix_tools a.tools:before{
+    display: block;
+    content: "";
+    width: 28px;
+    margin:auto;
+    position: relative;
+    top: 14px;
+    height: 31px;
+}
+.fix_tools a.tools_1:before{
+    background: url('../../img/bigo/icon.png') 1px -866px no-repeat;
+}
+.fix_tools a.tools_2:before{
+    background: url('../../img/bigo/icon.png') -0px -906px no-repeat;
+}
+.fix_tools a.tools_3:before{
+    background: url('../../img/bigo/icon.png') -0px -947px no-repeat;
+}
+.fix_tools a.tools_1:hover:before{
+    background: url('../../img/bigo/icon.png') -81px -866px no-repeat;
+}
+.fix_tools a.tools_2:hover:before{
+    background: url('../../img/bigo/icon.png') -82px -906px no-repeat;
+}
+.fix_tools a.tools_3:hover:before{
+    background: url('../../img/bigo/icon.png') -82px -947px no-repeat;
+}
+.fix_tools .follow_box{
+    width: 175px;
+    padding-right: 13px;
+    height: 99px;
+    position: absolute;
+    top: 0;
+    right: 58px;
+    display: none;
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -moz-transform-origin:100% 0;
+    -o-transform-origin:100% 0;
+    transform-origin: 100% 0;
+    background: url('../../img/bigo/follow_bg2.png') center no-repeat ;
+}
+.fix_tools li:hover .follow_box{
+    display: block;
+    animation: scale 0.5s;
+    -moz-animation: scale 0.5s;
+    -webkit-animation: scale 0.5s;
+    -o-animation: scale 0.5s;
+}
+.follow_box .tips{
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    padding:12px 0px;
+}
+.follow_btn_box a{
+    float: left;
+    margin-left: 15px;
+    color: #999;
+}
+.follow_btn_box a.item:before{
+    display: block;
+    content: "";
+    width: 26px;
+    height: 24px;
+}
+.follow_btn_box a.item1:before{
+    background: url('../../img/bigo/icon.png') -0px -696px no-repeat ;
+}
+.follow_btn_box a.item2:before{
+    background: url('../../img/bigo/icon.png') -0px -731px no-repeat ;
+}
+.follow_btn_box a.item3:before{
+    background: url('../../img/bigo/icon.png') -0px -762px no-repeat ;
+}
+.follow_btn_box a.item4:before{
+    background: url('../../img/bigo/icon.png') -2px -794px no-repeat ;
+}
+/*EE返回顶部等固定工具条*/
+/*SS下拉的二级内容弹性动画*/
+@keyframes scale
+{
+    0%   {transform: scale(0.8);}
+    25%  {transform: scale(1.1);}
+    50%  {transform: scale(0.95);}
+    100% {transform: scale(1);}
+}
+
+@-moz-keyframes scale /* Firefox */
+{
+    0%   {-moz-transform: scale(0.8);}
+    25%  {-moz-transform: scale(1.1);}
+    50%  {-moz-transform: scale(0.95);}
+    100% {-moz-transform: scale(1);}
+}
+
+@-webkit-keyframes scale /* Safari 和 Chrome */
+{
+    0%   {-webkit-transform: scale(0.8);}
+    25%  {-webkit-transform: scale(1.1);}
+    50%  {-webkit-transform: scale(0.95);}
+    100% {-webkit-transform: scale(1);}
+}
+
+@-o-keyframes scale /* Opera */
+{
+    0%   {-o-transform: scale(0.8);}
+    25%  {-o-transform: scale(1.1);}
+    50%  {-o-transform: scale(0.95);}
+    100% {-o-transform: scale(1);}
+}
+/*EE下拉的二级内容弹性动画*/
+/*SS页脚底部*/
+.page_bottom_wrap{
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+    background: #161616;
+}
+.page_bottom_cont{
+    width: 1000px;
+    margin:auto;
+    text-align: center;
+}
+.bott_follow_box{
+    display: inline-block;
+    overflow: hidden;
+}
+.bott_follow_box a{
+    display: block;
+    float: left;
+    margin-left: 15px;
+    width: 26px;
+    height: 22px;
+    overflow: hidden;
+    text-indent: -99px;
+    background-image: url('../../img/bigo/icon.png');
+    background-repeat: no-repeat;
+}
+.bott_follow_box a.follow1{
+    width: 24px;
+    background-position: -25px -744px;
+}
+.bott_follow_box a.follow2{
+    background-position: -30px -778px;
+}
+.bott_follow_box a.follow3{
+    background-position: -30px -809px;
+}
+.bott_follow_box a.follow4{
+    background-position: -29px -841px;
+}
+.bott_follow_box a.follow1:hover{
+    background-position: -52px -744px;
+}
+.bott_follow_box a.follow2:hover{
+    background-position: -57px -778px;
+}
+.bott_follow_box a.follow3:hover{
+    background-position: -57px -809px;
+}
+.bott_follow_box a.follow4:hover{
+    background-position: -56px -841px;
+}
+.page_bottom_cont .bott_1{
+    position: relative;
+    top: 25px;
+    margin-bottom: 50px;
+}
+.page_bottom_cont .bott_2{
+    margin-bottom: 15px;
+}
+.page_bottom_cont .bott_2 span{
+    margin:0px 20px;
+}
+.page_bottom_cont, .page_bottom_cont a{
+    font-size: 14px;
+    color: #999;
+}
+.page_bottom_cont a:hover{
+    color: #00ddcc;
+}
+.index_cont_box{
+    width: 1200px;
+    margin:auto;
+    margin-bottom: 40px;
+}
+.index_page_list .room_item{
+    width: 20%;
+}
+.index_page_list .hosts_photo{
+    height: 232px;
+}
+.index_page_list .bigo_game_list .hosts_photo{
+    height: 130px;
+}
+.bigo_act_wrap{
+    width: 100%;
+    height: 300px;
+    min-width: 1200px;
+    background: #e3e3e3;
+}
+.bigo_act_box{
+    width: 1200px;
+    margin:auto;
+    position: relative;
+    top: 25px;
+    overflow: hidden;
+}
+.bigo_act_ul{
+    overflow: hidden;
+}
+.bigo_act_ul li{
+    float: left;
+    width: 289px;
+    height: 119px;
+    margin:0px 5px;
+}
+.bigo_act_ul a, .bigo_act_ul img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*EE页脚底部*/

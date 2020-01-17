@@ -1,0 +1,1238 @@
+.page_wrap {
+    width: 100%;
+    min-width: 1340px;
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+    margin-bottom: -175px;
+}
+
+.page_wrap:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+.page_wrap:after {
+    content: '';
+    display: block;
+    height: 175px;
+}
+
+.page_content_box {
+    width: 1340px;
+    margin: 0 auto 80px;
+}
+
+.section_title_box {
+    height: 35px;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+.section_title_box .section_title {
+    display: inline-block;
+    line-height: 35px;
+    font-size: 28px;
+    color: #3a5161;
+    font-family: 'sans_500';
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.classify_content {
+    overflow: hidden;
+    margin-right: -25px;
+}
+
+.classify_content ul {
+    /*width: 3000px;*/
+    overflow: hidden;
+}
+
+.classify_content li {
+    width: 174px;
+    margin-bottom: 25px;
+    float: left;
+    margin-right: 25px;
+    overflow: hidden;
+}
+
+.index_page_content .classify_content li {
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.classify_content li:last-child {
+    margin-right: 0;
+}
+
+.classify_content img, .classify_content a {
+    display: block;
+    width: 100%;
+    color: #3a5161;
+    font-size: 16px;
+    font-family: 'sans_500';
+}
+
+.classify_content a:hover {
+    color: #00ddcc;
+}
+
+.classify_content .classify_name {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.live_wrap {
+    overflow: hidden;
+    margin-top: 45px;
+    border-top: 1px #eeeeee solid;
+}
+
+.live_section {
+    width: 1060px;
+    float: left;
+}
+
+.live_right_section {
+    width: 250px;
+    float: right;
+}
+
+.live_sort_ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.live_sort_ul a {
+    font-size: 14px;
+    color: #3a5161;
+    line-height: 22px;
+    padding: 0px 10px;
+    border-radius: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'sans_500';
+    border: 1px #e2e2e2 solid;
+}
+
+.live_sort_ul a.selected, .live_sort_ul a:hover {
+    background: #00ddcc;
+    color: #fff;
+    border: 1px #00ddcc solid;
+}
+
+.live_sort_more {
+    font-size: 14px;
+    color: #00ddcc;
+    float: right;
+    position: relative;
+    top: 9px;
+    font-family: 'sans_500';
+}
+
+.live_sort_more:hover {
+    color: #00caba;
+}
+
+.match_banner {
+    height: 404px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+
+.match_banner_ul {
+    position: absolute;
+    z-index: 8;
+    left: 0;
+    top: 0;
+}
+
+.match_banner_ul li {
+    width: 250px;
+    height: 404px;
+    float: left;
+}
+
+.match_banner_ul a, .match_banner_ul img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.match_banner_ind {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 9;
+}
+
+.match_banner_ind li {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px #00ddcc solid;
+}
+
+.match_banner_ind .current {
+    background: rgba(0, 221, 204, 0.5);
+}
+
+.top_rank_wrap {
+    margin-top: 35px;
+}
+
+.top_rank_box {
+    border: 1px #e2e2e2 solid;
+}
+
+.top_rank_box_tab {
+    overflow: hidden;
+}
+
+.top_rank_box_tab li {
+    width: 123px;
+    height: 38px;
+    text-align: center;
+    float: left;
+    background: #f0f0f0;
+    border-left: 1px #e2e2e2 solid;
+    border-bottom: 1px #e2e2e2 solid;
+}
+
+.top_rank_box_tab li.current {
+    background: #fff;
+    border-left: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+}
+
+.top_rank_box_tab a {
+    display: inline-block;
+    line-height: 38px;
+    font-size: 14px;
+    color: #3a5161;
+    font-family: 'sans_500';
+}
+
+.top_rank_box_tab .beans_bg:before {
+    background: url('../../img/bigo/icon.png') -10px -513px no-repeat;
+}
+
+.top_rank_box_tab .views_bg:before {
+    background: url('../../img/bigo/icon2.png') -88px -0px no-repeat;
+}
+
+.top_rank_box_tab a:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: relative;
+    top: 8px;
+}
+
+.top_rank_ul_box {
+    display: none;
+    padding-top: 25px;
+    height: 450px;
+    overflow: auto;
+}
+
+.top_rank_box ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+    display: none;
+}
+
+.top_rank_box ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+
+.top_rank_box ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #c2c2c2;
+}
+
+.top_rank_box ::-webkit-scrollbar-button {
+    height: 5px;
+    width: 5px;
+    background: transparent;
+}
+
+.top_rank_ul_box.current {
+    display: block;
+}
+
+.top_rank_ul_box li {
+    overflow: hidden;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.top_rank_ul_box .rank_num {
+    width: 28px;
+    height: 22px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #999999;
+    font-family: 'sans_500';
+    float: left;
+    margin: 13px 3px 0;
+}
+
+.top_rank_ul_box li:nth-child(1) .rank_num {
+    color: #fff;
+    background: url('../../img/bigo/icon2.png') -5px -59px no-repeat;
+}
+
+.top_rank_ul_box li:nth-child(2) .rank_num {
+    color: #fff;
+    background: url('../../img/bigo/icon2.png') -5px -89px no-repeat;
+}
+
+.top_rank_ul_box li:nth-child(3) .rank_num {
+    color: #fff;
+    background: url('../../img/bigo/icon2.png') -5px -117px no-repeat;
+}
+
+.top_rank_ul_box .thumb {
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    border-radius: 50px;
+    float: left;
+    border: 2px #f5f5f5 solid;
+}
+
+.rank_1 .thumb {
+    border: 2px #f9c43a solid;
+}
+
+.rank_2 .thumb {
+    border: 2px #c0dcf1 solid;
+}
+
+.rank_3 .thumb {
+    border: 2px #db855e solid;
+}
+
+.top_rank_ul_box .thumb img {
+    display: block;
+    width: 100%;
+}
+
+.top_rank_ul_box .name_box {
+    width: 125px;
+    float: left;
+    margin: 0px 8px;
+}
+
+.top_rank_ul_box .nick_name, .top_rank_ul_box .beans_views_num {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.top_rank_ul_box .nick_name {
+    color: #2e2e2e;
+    font-family: 'sans_500';
+    line-height: 28px;
+}
+
+.top_rank_ul_box .beans_views_num {
+    color: #ffb23a;
+}
+
+.bigo_room_list .room_item {
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.room_item a, .room_item img {
+    display: block;
+}
+
+.room_item a {
+    margin-right: 25px;
+}
+
+.index_page_content .room_item a {
+    margin-right: 20px;
+}
+
+.room_item img {
+    width: 100%;
+    height: 99%;
+    /*max-height: 100%;*/
+}
+
+.room_item .hosts_photo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('../../img/bigo/bigo_auto.png') center top no-repeat;
+    background-size: 100% auto;
+    border-radius: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.room_item .hosts_photo {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.recom_hover {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 20px;
+    height: 60px;
+    z-index: 9;
+    padding-top: 18px;
+    overflow: hidden;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: url('../../img/bigo/opa.png') center top no-repeat;
+}
+
+.hosts_name_box {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 26px;
+    background: #fff;
+    width: 100%;
+    padding: 10px 0 0;
+}
+
+.recom_hover .room_name {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'sans_500';
+}
+
+.recom_hover .hosts_name {
+    font-size: 14px;
+    color: #81a1ae;
+    line-height: 17px;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-right: -75px;
+    position: relative;
+}
+
+.recom_hover .viewer_num {
+    font-size: 14px;
+    color: #81a1ae;
+    float: right;
+    display: block;
+}
+
+.recom_hover .text_name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 90px;
+}
+
+.recom_hover .viewer_num:before {
+    width: 18px;
+    height: 16px;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 3px;
+    background: url(../../img/bigo/icon2.png) -89px -23px no-repeat;
+}
+
+.bigo_room_list {
+    position: relative;
+    overflow: hidden;
+    margin-right: -25px;
+    margin-bottom: 20px;
+}
+
+.game_margin_wrap .game_live_ul_box{
+    min-height: 600px;
+}
+
+.game_live_ul_box .room_cover {
+    height: 140px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.show_live_ul_box .room_cover {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.hover_bg {
+    display: block;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    margin-top: -27px;
+    margin-left: -27px;
+    opacity: 0;
+    background: url('../../img/bigo/video_h.png') center no-repeat;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    transition: all ease-out 250ms;
+    -webkit-transition: all ease-out 250ms;
+    -moz-transition: all ease-out 250ms;
+}
+
+.room_item:hover .hover_bg {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hover_bg_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 36px;
+    right: 25px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.all_ignore_uids {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    clear: both;
+    background: url('../../img/bigo/loading.gif') center no-repeat;
+}
+
+.index_page_content .hover_bg_box {
+    right: 20px; /*首页间距不一样*/
+}
+
+.room_item:hover .hover_bg_box {
+    z-index: 9;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.game_li_detail_box {
+    height: 35px;
+    padding-top: 15px;
+    z-index: 9;
+    position: relative;
+}
+
+.game_li_detail_box .thumb {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+    background: #9b9b9b;
+}
+
+.game_li_detail_box .name_box {
+    width: 150px;
+    float: left;
+}
+
+.game_li_detail_box .room_name {
+    font-size: 14px;
+    color: #3a5161;
+    font-family: 'sans_500';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 1px;
+}
+
+.game_li_detail_box .hosts_name {
+    font-size: 14px;
+    color: #81a1ae;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 16px;
+    line-height: 16px;
+}
+
+.game_li_detail_box .viewer_num {
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    bottom: 5px;
+    font-size: 14px;
+    color: #81a1ae;
+}
+
+.game_li_detail_box .viewer_num:before {
+    width: 18px;
+    height: 16px;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 3px;
+    background: url(../../img/bigo/icon2.png) -89px -23px no-repeat;
+}
+
+.hover_bg_game {
+    bottom: 50px;
+}
+
+.banner_wrap {
+    position: relative;
+    width: 100%;
+    min-width: 1340px;
+    height: 750px;
+    background-color: #151818;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url(../../img/bigo/index_game_bg.jpg);
+}
+
+.indexBannerLink {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -500px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.banner_section {
+    width: 1008px;
+    margin: auto;
+    position: relative;
+    z-index: 8;
+    top: 20px;
+}
+
+.video_section {
+    height: 567px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../../img/bigo/video_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*.video_box_e{
+    width: 100%;
+    height: 568px;
+    position: relative;
+    overflow: hidden;
+}*/
+.video_ind_section {
+    height: 98px;
+    position: relative;
+    margin-top: 45px;
+}
+
+.video_ind_section .ind_btn {
+    position: absolute;
+    width: 14px;
+    height: 24px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.video_ind_section .prev_btn {
+    left: 0;
+    background: url(../../img/bigo/icon2.png) -1px -223px no-repeat;
+}
+
+.video_ind_section .prev_btn:hover {
+    background: url(../../img/bigo/icon2.png) -19px -223px no-repeat;
+}
+
+.video_ind_section .next_btn {
+    right: 0;
+    background: url(../../img/bigo/icon2.png) -2px -255px no-repeat;
+}
+
+.video_ind_section .next_btn:hover {
+    background: url(../../img/bigo/icon2.png) -20px -255px no-repeat;
+}
+
+.ind_banner_box {
+    width: 960px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.ind_banner_ul {
+    position: absolute;
+    top: 0;
+    left: -960px;
+}
+
+.ind_banner_ul li {
+    width: 168px;
+    height: 94px;
+    float: left;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 2px rgba(255, 255, 255, 0) solid;
+}
+
+.ind_banner_ul li.current {
+    border: 2px rgba(255, 255, 255, 1) solid;
+}
+
+.ind_banner_ul img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.ind_banner_ul .cover_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+
+.ind_banner_ul .opa_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.ind_banner_ul li.current .opa_bg, .ind_banner_ul li:hover .opa_bg {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#flashContent {
+    width: 100%;
+    height: 100%;
+}
+
+.video_table {
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1000px;
+    margin-top: -1000px;
+    display: table;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+.video_cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+.video_cell video {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    -moz-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+}
+
+.landscape video {
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+}
+
+.video_cell .video_tag {
+    /*display: block;
+    width: 100%;
+    height: 100%;*/
+    position: relative;
+    z-index: 1;
+}
+
+/*视频控件*/
+.video_control_box {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.01); /*ie9bug*/
+}
+
+.hover_v_ent_room {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+.video_control_inner {
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-transition: 0.1s top;
+    -webkit-transition: 0.1s top;
+    -o-transition: 0.1s top;
+    transition: 0.1s top;
+}
+
+a.enter_room {
+    font-size: 14px;
+    color: #161616;
+    font-family: 'sans_500';
+    width: 152px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 28px;
+    background: #00ddcc;
+    float: right;
+    margin-right: 12px;
+    position: relative;
+    top: 8px;
+}
+
+.video_section:hover .video_control_inner {
+    top: 0px;
+}
+
+.full_screen_zindex .video_control_box .video_control_inner {
+    top: 100%;
+}
+
+.full_screen_zindex .video_control_box:hover .video_control_inner {
+    top: 0px;
+}
+
+.rotate_v_btn {
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 202px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url('../../img/bigo/video_control/rotate-normal.png') center no-repeat;
+}
+
+.rotate_v_btn:hover {
+    background: url('../../img/bigo/video_control/rotate-hover.png') center no-repeat;
+}
+
+.full_screen_box {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 172px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.statu_full {
+    background: url('../../img/bigo/video_control/maximize-normal.png') center no-repeat;
+}
+
+.statu_full:hover {
+    background: url('../../img/bigo/video_control/maximize-hover.png') center no-repeat;
+}
+
+.statu_exit_full {
+    background: url('../../img/bigo/video_control/minimize-normal.png') center no-repeat;
+}
+
+.statu_exit_full:hover {
+    background: url('../../img/bigo/video_control/minimize-hover.png') center no-repeat;
+}
+
+.volume_control_box {
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    overflow: hidden;
+}
+
+.horn_btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.statu_volume_off {
+    background: url('../../img/bigo/video_control/vol-normal.png') center no-repeat;
+}
+
+.statu_volume_off:hover {
+    background: url('../../img/bigo/video_control/vol-hover.png') center no-repeat;
+}
+
+.statu_volume_on {
+    background: url('../../img/bigo/video_control/vol-mute-hover.png') center no-repeat;
+}
+
+.statu_volume_on:hover {
+    background: url('../../img/bigo/video_control/vol-mute-normal.png') center no-repeat;
+}
+
+.volume_bg {
+    width: 100px;
+    height: 4px;
+    background: #000000;
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    border-radius: 4px;
+}
+
+.volume_current {
+    height: 100%;
+    width: 100%;
+    background: #00ddcc;
+    position: relative;
+    border-radius: 4px;
+}
+
+.volume_right_dot {
+    width: 14px;
+    height: 14px;
+    background: #00ddcc;
+    border-radius: 14px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #00ddcc;
+}
+
+.full_screen_zindex {
+    position: relative;
+    z-index: 999999;
+}
+
+.full_screen_zindex .video_section {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100% !important;
+    z-index: 999;
+    margin-top: 0;
+    border: none;
+}
+
+/*列表页1*/
+.game_margin_wrap {
+    margin: 0 60px;
+}
+
+/*游戏banner轮播*/
+.game_banner_wrap {
+    width: 100%;
+    min-width: 1082px;
+    height: 320px;
+    position: relative;
+}
+
+.game_ind_ul {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    bottom: 21px;
+    right: 20px;
+    z-index: 9;
+}
+
+.game_banner_ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+}
+
+.game_banner_ul li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 8;
+    -moz-transition: 2s all; /* Firefox 4 */
+    -webkit-transition: 2s all; /* Safari 和 Chrome */
+    -o-transition: 2s all;
+    transition: 2s all;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.game_banner_ul li.current {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.game_banner_ul li.zindex {
+    z-index: 9;
+}
+
+.game_banner_ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.game_banner_ul li img {
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    margin-left: -960px;
+}
+
+.game_ind_ul li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    cursor: pointer;
+    margin: 0px 10px;
+    border-radius: 12px;
+    border: 1px #ffffff solid;
+}
+
+.game_ind_ul li.current {
+    border: 1px #00ddcc solid;
+    background: rgba(0, 221, 204, 0.5);
+}
+
+.game_load_about_box {
+    margin: 30px 60px 20px;
+}
+
+.game_load_about_box .game_name {
+    color: #3a5161;
+    font-size: 28px;
+    font-family: 'sans_500';
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.game_load_about_box .game_btn {
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'sans_300';
+    background: #0dc;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    display: inline-block;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.game_load_about_box .game_btn:hover {
+    background: #00caba;
+}
+
+/*游戏推荐banner*/
+.game_rec_wrap {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.game_rec_banner {
+    width: 2055px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1027px;
+    overflow: hidden;
+}
+
+.game_rec_wrap > p {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -16px;
+    border: 2px #fff solid;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.game_rec_wrap > p:hover {
+    border-color: #00ddcc;
+    color: #00DDCC;
+}
+
+.game_rec_wrap > p.prev {
+    left: 20px;
+}
+
+.game_rec_wrap > p.next {
+    right: 20px;
+}
+
+.game_rec_ul {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: -2040px;
+    top: 0px;
+    z-index: 8;
+}
+
+.game_rec_ul .opa {
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.game_rec_ul .current .opa {
+    background: rgba(0, 0, 0, 0);
+}
+
+.game_rec_ind_box {
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    z-index: 9;
+    text-align: center;
+}
+
+.game_rec_ind {
+    display: inline-block;
+}
+
+.game_rec_ind li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-right: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px #fff solid;
+}
+
+.game_rec_ind li.current {
+    border: 1px #00ddcc solid;
+    background: rgba(0, 221, 204, 0.5);
+}
+
+.game_rec_ul li {
+    width: 680px;
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+
+.game_rec_ul li a, .game_rec_ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
