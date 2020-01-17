@@ -7,7 +7,7 @@
         "log4js": "^2.6.0",
         "mysql": "^2.15.0",
         "mysql2": "^1.5.3",
-        "sequelize": "^4.37.6",
+        "sequelize": "^5.15.1",
         "socket.io": "^2.1.0",
         "underscore": "^1.9.0"
     },
